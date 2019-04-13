@@ -7,20 +7,21 @@
 
 SlotMachine is a android library for creating slotmachine view
 
-[Imgur](https://i.imgur.com/iWwwgPT.gifv)
+![](images/machine.gif)
 
 ## Installation
 
-
+in root build.gradle
 ```bash
-  in root build.gradle
   allprojects {
 		repositories {
 			...
 			maven { url "https://jitpack.io" }
 		}
-	}
-	in app build.gradle
+	}```
+	
+in app build.gradle
+```bash
 	dependencies {
 	        implementation 'com.github.ahmedezz012:SlotMachine:2.0'
 	}
@@ -31,19 +32,18 @@ SlotMachine is a android library for creating slotmachine view
 ```
 add slotmachine to your view xml 
 
-[Imgur](https://i.imgur.com/51q4qan.png)
-
+![](images/1.gif)
 create custome Adapter and implements SlotMachineAdapter and override getCount & getView method
 
-[Imgur](https://i.imgur.com/fNPpTt3.png)
+![](images/2.png)
 
-[Imgur](https://i.imgur.com/75tBzUM.png)
+![](images/3.png)
 
 in your view class 
 find the slotmachine by id and set your custome adapter to it 
 and setdisplayedChild(the item which the machine will start with it)
 
-[Imgur](https://i.imgur.com/lBj9uGM.png)
+![](images/4.png)
 
 when you want to start the machine call method start and pass those values to it
 speed
@@ -53,11 +53,11 @@ slotCount (number of slot items)
 stopPosition (the position it will stop on it)
 SlotMachineStopListener (this listsner return the view which the machine stop on it)
 
-[Imgur](https://i.imgur.com/ksltt2x.png)
+![](images/5.png)
 
 when you want to stop the machine call method beginStop which will mae the machine to begin decelerate its speed until stop on the desired stopPosition
 
-[Imgur](https://i.imgur.com/WuaxSXS.png)
+![](images/6.png)
 
 
 ```
