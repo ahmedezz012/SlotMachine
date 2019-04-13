@@ -18,10 +18,10 @@ in root build.gradle
 			...
 			maven { url "https://jitpack.io" }
 		}
-	}```
-	
+	}
+```
 in app build.gradle
-```bash
+```bash2
 	dependencies {
 	        implementation 'com.github.ahmedezz012:SlotMachine:2.0'
 	}
@@ -29,7 +29,7 @@ in app build.gradle
 
 ## Usage
 
-```
+
 add slotmachine to your view xml 
 
 ![](images/1.gif)
@@ -60,7 +60,7 @@ when you want to stop the machine call method beginStop which will mae the machi
 ![](images/6.png)
 
 
-```
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
